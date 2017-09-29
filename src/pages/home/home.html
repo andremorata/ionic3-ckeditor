@@ -8,7 +8,33 @@
 
 <ion-content padding>
   The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+
+  <ion-card>
+    <ion-card-header>
+      Editor
+    </ion-card-header>
+    <ion-card-content>
+      <html-editor (contentChanged)="htmlChanged($event)"></html-editor>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Result as Code
+    </ion-card-header>
+    <ion-card-content>
+      {{htmlContent}}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+      <ion-card-header>
+        Result Rendered
+      </ion-card-header>
+      <ion-card-content>
+        <div [innerHtml]="htmlContent"></div>
+      </ion-card-content>
+    </ion-card>
+
 </ion-content>

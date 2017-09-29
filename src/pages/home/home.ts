@@ -7,8 +7,14 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  public htmlContent: string;
 
+  constructor(public navCtrl: NavController) {
+    this.htmlContent = '';
+  }
+
+  htmlChanged(e) {
+    this.htmlContent = e;
   }
 
 }
