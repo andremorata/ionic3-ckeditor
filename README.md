@@ -1,26 +1,26 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+## Exemplo de uso do CKEditor com Angular4 e Ionic 3 Edit
 
-## How to use this template
+### How to use this code
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+`Install NodeJS and then the Ionic and Cordova Packages`
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+[NodeJS - Click here to download](http://nodejs.org)
 
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
+After installing Node, open a terminal and run the following command:
 ```bash
 $ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
 ```
 
-Then, to run it, cd into `myBlank` and run:
+Clone this repo running the following command in a terminal:
 
 ```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+$ git clone https://github.com/andremorata/ionic3-ckeditor.git
 ```
 
-Substitute ios for android if not on a Mac.
+Then, to run it, cd into the folder you put the code on and run:
 
+```bash
+$ cd ionic3-ckeditor
+$ npm install
+$ ionic serve
+```
